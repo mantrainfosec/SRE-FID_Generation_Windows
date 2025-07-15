@@ -1,10 +1,10 @@
-# 🔍 Automated Function ID Database Generation for Ghidra on Windows
+# Automated Function ID Database Generation for Ghidra on Windows
 
 This repository contains PowerShell scripts that automate the process of generating **Function ID (FID) databases** in [Ghidra](https://ghidra-sre.org/) for statically linked Windows libraries — especially useful when symbol information is stripped from binaries.
 
 The process helps reverse engineers identify known functions by applying pre-generated function signatures to decompiled code, similar to IDA Pro’s FLIRT technology.
 
-## 📌 Why This Exists
+## Why This Exists
 
 When analyzing stripped Windows binaries using statically linked libraries (e.g. OpenSSL), manually identifying functions can be tedious and error-prone. While tools and guides exist for Linux, this workflow fills the gap for **Windows-based analysis** by automating:
 
@@ -14,7 +14,7 @@ When analyzing stripped Windows binaries using statically linked libraries (e.g.
 
 ---
 
-## 🧰 Scripts Overview
+## Scripts Overview
 
 ### 1. `01Extract-LibContents.ps1`
 Extracts individual `.obj` files from a given `.lib` static library using the `lib.exe` utility (part of Visual Studio toolchain).
@@ -49,9 +49,9 @@ Note: Once generated, you can apply the `.fidb` via Ghidra:
 ### Blog Post:
 
 Read the full write-up here:
-(Automated Function ID Database Generation in Ghidra on Windows)[https://blog.mantrainfosec.com/blog/17/automated-function-id-database-generation-in-ghidra-on-windows]
+[Automated Function ID Database Generation in Ghidra on Windows](https://blog.mantrainfosec.com/blog/17/automated-function-id-database-generation-in-ghidra-on-windows)
 
 ### Credits
 
-Based on the original Linux scripts and write-up by (@0x6d696368)[https://blog.threatrack.de/2019/09/20/ghidra-fid-generator/].
+Based on the original Linux scripts and write-up by [@0x6d696368](https://blog.threatrack.de/2019/09/20/ghidra-fid-generator/).
 This Windows adaptation by Balazs Bucsay from Mantra Information Security.
