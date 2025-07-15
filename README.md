@@ -53,5 +53,5 @@ Read the full write-up here:
 
 ### Credits
 
-Based on the original Linux scripts and write-up by [@0x6d696368](https://blog.threatrack.de/2019/09/20/ghidra-fid-generator/).
+Based on the original Linux scripts and write-up by [@0x6d696368](https://blog.threatrack.de/2019/09/20/ghidra-fid-generator/).  
 This Windows adaptation by Balazs Bucsay from Mantra Information Security.
